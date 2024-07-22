@@ -19,10 +19,10 @@ on:
 
 jobs:
   yocto:
-    name: Yocto (Test edition!)
+    name: Yocto (Test edition, new default!)
     # Pin the workflow to a specific commit to prevent unexpected changes while
     # I am learning.
-    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@v1.25.9
+    uses: balena-os/balena-yocto-scripts/.github/workflows/yocto-build-deploy.yml@670594bb7aded24c6cda3643ae78688688d09996
     # Prevent duplicate workflow executions for pull_request (PR) and pull_request_target (PRT) events.
     # Both PR and PRT will be triggered for the same pull request, whether it is internal or from a fork.
     # This condition will prevent the workflow from running twice for the same pull request while
